@@ -10,7 +10,7 @@ to see how to use the turtle commands.
 
 # These lines are needed in most turtle programs
 import turtle                           # Tell Python we want to work with the turtle
-turtle.setup (width=600, height=600)    # Set the size of the window
+turtle.setup(width=600, height=600)    # Set the size of the window
 
 tina = turtle.Turtle()                  # Create a turtle named tina
 
@@ -20,4 +20,13 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 
 ... # Your code here
 
+tina.pendown()
+tina.pencolor('blue')
+tina.left(60) 
+tina.forward(20)
+
+tina.left(60)
+tina.forward(20)
+
+tina.backward(20)
 turtle.exitonclick()                    # Close the window when we click on it
