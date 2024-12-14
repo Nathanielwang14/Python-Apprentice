@@ -21,17 +21,16 @@ you can ask for a string with simpledialog.askstring().
 
 """
 
-# Import the required modules
+from tkinter import messagebox, simpledialog, Tk
 
-# Create a window object
+window = Tk() 
+window.withdraw()  
 
-# Hide the window, hint: use the withdraw method
+a = simpledialog.askinteger("Input number", "Input the first number") 
 
-# Ask the user for the first number   
+b = simpledialog.askinteger("Input number", "Input the second number") 
 
-# Ask the user for the second number
-
-# Ask the user for the math operation
+c = simpledialog.askio("Input operation", "Input the operation for the equation") 
 
 # Use if-elif-else statements to provide the desired math operation on the numbers and display the result.
 
