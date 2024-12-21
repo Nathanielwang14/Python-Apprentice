@@ -30,9 +30,27 @@ a = simpledialog.askinteger("Input number", "Input the first number")
 
 b = simpledialog.askinteger("Input number", "Input the second number") 
 
-c = simpledialog.askio("Input operation", "Input the operation for the equation") 
+c = simpledialog.askstring("Input operation", "Input the operation for the equation") 
 
-# Use if-elif-else statements to provide the desired math operation on the numbers and display the result.
+additon= "+"
+mult= "*"
+subtract= "-"
+divi= "//"
+
+if additon: 
+   print("a+b=",a+b)
+
+elif mult:
+    print("a*b=", a*b)
+    
+elif subtract:
+    print("a-b=". a-b)
+    
+elif divi:
+    ("a//b=", a//b)
+
+else:
+    messagebox.showinfo("Error")
 
 # If the user enters an unknown operation, display an error message. ( use messagebox.showerror()
 
