@@ -38,19 +38,22 @@ subtract= "-"
 divi= "//"
 
 if additon: 
-   print("a+b=",a+b)
+   messagebox.showinfo("a+b=",a+b)
 
 elif mult:
-    print("a*b=", a*b)
+    messagebox.showinfo("a*b=", a*b)
     
 elif subtract:
-    print("a-b=". a-b)
+    messagebox.showinfo("a-b=". a-b)
     
 elif divi:
-    ("a//b=", a//b)
+    messagebox.showinfo("a//b=", a//b)
 
 else:
     messagebox.showinfo("Error")
+
+
+
 
 # If the user enters an unknown operation, display an error message. ( use messagebox.showerror()
 
