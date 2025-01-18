@@ -11,6 +11,8 @@ words = ['Once', '👦', 'upon', '🐕', 'park', 'met', 'with', 'a', 'the',
 
 story = []
 
+print(list(set("Once upon a time a 👦 with a 🐕 met a 👧 who had a 🐈 and they went to the park to play with a ⚽.".split())))
+
 # Create a story using the words in the list
 
 # Display the story to the user
