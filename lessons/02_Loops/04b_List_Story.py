@@ -9,9 +9,7 @@ append them to the story
 words = ['Once', '👦', 'upon', '🐕', 'park', 'met', 'with', 'a', 'the', 
     'time', 'to', 'who', '🐈', '👧', 'and', 'went', 'had', 'play', '⚽.', 'they']
 
-story = []
-
-print(list(set("Once upon a time a 👦 with a 🐕 met a 👧 who had a 🐈 and they went to the park to play with a ⚽.".split())))
+story = (words[0])
 
 # Create a story using the words in the list
 
