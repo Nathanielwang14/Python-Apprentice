@@ -42,4 +42,20 @@ app = App("Numbers Grid", layout="grid")
 
 # Call Text(app, text='...', grid=[col, row], color=...) to display something. 
 
+for i in range(8):
+    for j in range(8):
+        print(f"({i},{j})", end= ' ')
+    print()
+
+for i in range(1, 31): 
+    
+    if i % 15 == 0:
+        print(i, '🐍 snake!')
+    elif i % 5 == 0:
+        print(i, '🦡 badger')
+    elif i % 3 == 0:
+        print(i, '🍄 mushroom')
+    else:
+        print(i)
+
 app.display()
