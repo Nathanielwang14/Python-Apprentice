@@ -25,7 +25,7 @@ Get a random number:
 Use the ask_integer function to get the user's guess, like this:
     guess = ask_integer("Guess a number between 1 and 100: ")
 
-NOTE! The prompts and output for your program will be in the teminal
+NOTE!The prompts and output for your program will be in the teminal
 at the bottom of the editor screen; this program does not use the GUI.
 
 """
@@ -41,16 +41,24 @@ def ask_integer(prompt):
             print("Please enter a valid number!")
 
 
-# Pick the random number
+n = random.randint(1, 100)
 
-# In your loop:
+i= ask_integer("whats yo number ")
+x=7   
+while True:
+        print(i)
+        if i % x == 0:
+            print('that is a very bad number, starting over')
+        elif i>n:
+            print('too high, start over')
+        elif i<n:
+            print('too low, start over')
+        if i == n:
+            print('good job')
+            break
+        i = ask_integer("new numbah ")
 
-    # Get the user's guess
 
-    # If the user's guess is divisible by 7, tell the user to start over
 
-    # If the user's guess is too high, tell the user
-    # If the user's guess is too low, tell the user
-    # If the user's guess is correct, tell the user and break out of the loop
 
 
