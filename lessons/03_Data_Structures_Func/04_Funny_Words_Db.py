@@ -43,7 +43,12 @@ def add_definition(db, key, value):
 
     # Set the item in the database
 
-    pass
+    if len(db)<5:
+        db[key]=value
+    else:
+        print("error")
+
+ 
 
 
 def delete_definition(db, key):
@@ -60,6 +65,7 @@ def delete_definition(db, key):
 
     # Delete the item from db if it is present
 
+    
     pass
 
 
