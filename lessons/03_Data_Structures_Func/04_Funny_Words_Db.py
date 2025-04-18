@@ -64,9 +64,11 @@ def delete_definition(db, key):
     """
 
     # Delete the item from db if it is present
-
+s = set("abcd")
+s.remove('c')
+print(s)
     
-    pass
+pass
 
 
 def is_funny(definition):
