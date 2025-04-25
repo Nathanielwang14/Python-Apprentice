@@ -64,9 +64,8 @@ def delete_definition(db, key):
     """
 
     # Delete the item from db if it is present
-s = set("abcd")
-s.remove('c')
-print(s)
+    del db[key]
+    print(db)
     
 pass
 
@@ -85,7 +84,9 @@ def is_funny(definition):
     """
     
     # Return True if the definition contains any of the funny words, False otherwise
-
+    for word in definition.split():
+        if word in [ 'fun', 'funny', 'hilarious', 'amusing', 'pants', 'spleen']:
+            return True
     return False
 
 def update_listbox(db):
@@ -99,9 +100,9 @@ def update_listbox(db):
     # This function will return a list of definitions to be displayed in the listbox, like
     # the one below. (For your function, you should set this list to the empty list)
     l = [
-        "Item 1: Fake Definition 1",
-        "Item 2: Fake Definition 2",
-        "Item 3: fake Definition 3"
+        "noot",
+        "Snallygaster",
+        "fungus"
     ]
 
     # Add each definition to a string
