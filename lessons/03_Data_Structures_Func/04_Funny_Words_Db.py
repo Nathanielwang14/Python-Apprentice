@@ -99,11 +99,11 @@ def update_listbox(db):
 
     # This function will return a list of definitions to be displayed in the listbox, like
     # the one below. (For your function, you should set this list to the empty list)
-    l = [
-        "noot",
-        "Snallygaster",
-        "fungus"
-    ]
+    l = []
+
+    for key in db:
+        key == f"{key}: {db[key]}"
+        
 
     # Add each definition to a string
     # iterate over the dict's key-value pairs and turn them into
