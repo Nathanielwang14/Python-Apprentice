@@ -15,10 +15,13 @@ def check_row(l):
     Returns:
         The winner's token ( x or o ) if there is one, otherwise None
         """
-    if not 'o' in l and not None in l:
-        return 'x'
-    if not 'x' in l and not None in l:
-        return 'o'
+    print(l)
+    if not 'O' in l and not None in l:
+        print("x win")
+        return X_MARK
+    if not 'X' in l and not None in l:
+        print("o win")
+        return O_MARK
     return None
 
 def check_win(board):
@@ -35,7 +38,17 @@ def check_win(board):
         if token != None:
             return token 
     for i in range(3):
-        check_row[row[i]] 
+        token = check_row([row[i] for row in board])
+        if token != None:
+            return token 
+    token = check_row([board[i][i] for i in range(3)])
+    if token != None:
+        return token 
+    token = check_row([board[2-i][i] for i in range(3)])
+    if token != None:
+        return token 
+
+    
 
     
     return None
