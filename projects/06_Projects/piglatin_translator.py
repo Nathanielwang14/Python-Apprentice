@@ -4,7 +4,7 @@ import string
 from tkinter import simpledialog, Tk
 window = Tk()
 window.withdraw()
-
+from tkinter import messagebox
 
 vowel_set = 'aeiouAEIOU'
 vowels = [ch for ch in string.ascii_letters if ch in vowel_set]
@@ -36,12 +36,17 @@ def ask_phrase(prompt):
             return str(simpledialog.askstring("Textbox", prompt))
         except ValueError:
             print("Please enter a actual word!")
-    
+
 def entered_word(value):
+    output = ''
     for word in value.split():
+
         if word[0] in vowels:
-            print(word + "yay", end=" ") 
+            output += word + "yay" + " " 
         else:
-            print(word[1:] + word[0] + "ay", end=" ") 
+            output += word[1:] + word[0] + "ay" + " "
+
+    return output
  
-entered_word(ask_word("Enter Word"))
+messagebox.showinfo("Return", entered_word(ask_word("Enter Word")))
+    
